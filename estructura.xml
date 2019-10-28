@@ -1,0 +1,140 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="plantilla.xsl" ?>
+
+<!-- Pagina web de libreria -->
+<!-- Genero = {Disponibilidad, Titulo, Autor, Precio, Fecha edicion}=Libro -->
+<GLOBAL GLO="g">
+  <GENERO>
+    <NOMBRE>FICCION</NOMBRE>
+    <SUBG>
+      <SG>MISTERIO</SG>
+      <LIBRO>
+        <DISP></DISP>
+        <TITULO> </TITULO>
+        <AUTOR></AUTOR>
+        <PRECIO></PRECIO>
+        <EDICION></EDICION>
+      </LIBRO>
+    </SUBG>
+
+    <SUBG>
+      <SG>NOVELA_N</SG>
+      <LIBRO>
+        <DISP></DISP>
+        <TITULO> </TITULO>
+        <AUTOR></AUTOR>
+        <PRECIO></PRECIO>
+        <EDICION></EDICION>
+      </LIBRO>
+    </SUBG>
+
+    <SUBG>
+      <SG>ROMANCE</SG>
+      <LIBRO>
+        <DISP></DISP>
+        <TITULO> </TITULO>
+        <AUTOR></AUTOR>
+        <PRECIO></PRECIO>
+        <EDICION></EDICION>
+      </LIBRO>
+    </SUBG>
+
+    <SUBG>
+      <SG>FANTASIA</SG>
+      <LIBRO>
+        <DISP></DISP>
+        <TITULO> </TITULO>
+        <AUTOR></AUTOR>
+        <PRECIO></PRECIO>
+        <EDICION></EDICION>
+      </LIBRO>
+    </SUBG>
+
+  </GENERO>
+
+  <GENERO>
+    <NOMBRE>LITERATURA</NOMBRE>
+    <SUBG>
+      <SG>LIRICA</SG>
+      <LIBRO>
+        <DISP></DISP>
+        <TITULO> </TITULO>
+        <AUTOR></AUTOR>
+        <PRECIO></PRECIO>
+        <EDICION></EDICION>
+      </LIBRO>
+    </SUBG>
+
+    <SUBG>
+      <SG>POESIA</SG>
+      <LIBRO>
+        <DISP></DISP>
+        <TITULO> </TITULO>
+        <AUTOR></AUTOR>
+        <PRECIO></PRECIO>
+        <EDICION></EDICION>
+      </LIBRO>
+    </SUBG>
+
+    <SUBG>
+      <SG>NOVELA</SG>
+      <LIBRO>
+        <DISP></DISP>
+        <TITULO> </TITULO>
+        <AUTOR></AUTOR>
+        <PRECIO></PRECIO>
+        <EDICION></EDICION>
+      </LIBRO>
+    </SUBG>
+
+    <SUBG>
+      <SG>TEATRO</SG>
+      <LIBRO>
+        <DISP></DISP>
+        <TITULO> </TITULO>
+        <AUTOR></AUTOR>
+        <PRECIO></PRECIO>
+        <EDICION></EDICION>
+      </LIBRO>
+    </SUBG>
+
+  </GENERO>
+
+  <GENERO>
+    <NOMBRE>NO_FICCION</NOMBRE>
+    <SUBG>
+      <SG>ACADEMICO</SG>
+      <LIBRO>
+        <DISP></DISP>
+        <TITULO> </TITULO>
+        <AUTOR></AUTOR>
+        <PRECIO></PRECIO>
+        <EDICION></EDICION>
+      </LIBRO>
+    </SUBG>
+
+    <SUBG>
+      <SG>SALUD</SG>
+      <LIBRO>
+        <DISP></DISP>
+        <TITULO>PEPE</TITULO>
+        <AUTOR></AUTOR>
+        <PRECIO></PRECIO>
+        <EDICION></EDICION>
+      </LIBRO>
+    </SUBG>
+
+    <SUBG>
+      <SG>CIENTIFICOS</SG>
+      <LIBRO>
+        <DISP></DISP>
+        <TITULO> </TITULO>
+        <AUTOR></AUTOR>
+        <PRECIO></PRECIO>
+        <EDICION></EDICION>
+      </LIBRO>
+    </SUBG>
+
+  </GENERO>
+
+</GLOBAL>
