@@ -10,10 +10,10 @@
       <SG>MISTERIO</SG>
       <LIBRO>
         <DISP></DISP>
-        <TITULO> </TITULO>
-        <AUTOR></AUTOR>
-        <PRECIO></PRECIO>
-        <EDICION></EDICION>
+        <TITULO>The Best Misteries of Isaac Asimov</TITULO>
+        <AUTOR>Isaac Asimov</AUTOR>
+        <PRECIO>19.99€</PRECIO>
+        <EDICION>Santillana</EDICION>
       </LIBRO>
     </SUBG>
 
