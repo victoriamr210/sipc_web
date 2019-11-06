@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="plantilla.xsl" ?>
 
 <!-- Pagina web de libreria -->
-<!-- Genero = {Disponibilidad, Titulo, Autor, Precio, Fecha edicion}=Libro -->
+<!-- Genero = {Disponibilidad, Titulo, Autor, Precio, Fecha edicion, IBN  }=Libro -->
 <GLOBAL GLO="g">
   <GENERO>
     <NOMBRE>FICCION</NOMBRE>
@@ -14,17 +14,19 @@
         <AUTOR>Isaac Asimov</AUTOR>
         <PRECIO>19.99€</PRECIO>
         <EDICION>Santillana</EDICION>
+        <IBN>874569321</IBN>
       </LIBRO>
     </SUBG>
 
     <SUBG>
-      <SG>NOVELA_N</SG>
+      <SG>NOVELA NEGRA</SG>
       <LIBRO>
         <DISP></DISP>
         <TITULO> </TITULO>
         <AUTOR></AUTOR>
         <PRECIO></PRECIO>
         <EDICION></EDICION>
+        <IBN></IBN>
       </LIBRO>
     </SUBG>
 
@@ -36,6 +38,7 @@
         <AUTOR></AUTOR>
         <PRECIO></PRECIO>
         <EDICION></EDICION>
+        <IBN></IBN>
       </LIBRO>
     </SUBG>
 
@@ -47,6 +50,7 @@
         <AUTOR></AUTOR>
         <PRECIO></PRECIO>
         <EDICION></EDICION>
+        <IBN></IBN>
       </LIBRO>
     </SUBG>
 
@@ -62,6 +66,7 @@
         <AUTOR></AUTOR>
         <PRECIO></PRECIO>
         <EDICION></EDICION>
+        <IBN></IBN>
       </LIBRO>
     </SUBG>
 
@@ -73,6 +78,7 @@
         <AUTOR></AUTOR>
         <PRECIO></PRECIO>
         <EDICION></EDICION>
+        <IBN></IBN>
       </LIBRO>
     </SUBG>
 
@@ -84,6 +90,7 @@
         <AUTOR></AUTOR>
         <PRECIO></PRECIO>
         <EDICION></EDICION>
+        <IBN></IBN>
       </LIBRO>
     </SUBG>
 
@@ -95,13 +102,14 @@
         <AUTOR></AUTOR>
         <PRECIO></PRECIO>
         <EDICION></EDICION>
+        <IBN></IBN>
       </LIBRO>
     </SUBG>
 
   </GENERO>
 
   <GENERO>
-    <NOMBRE>NO_FICCION</NOMBRE>
+    <NOMBRE>NO FICCION</NOMBRE>
     <SUBG>
       <SG>ACADEMICO</SG>
       <LIBRO>
@@ -110,6 +118,7 @@
         <AUTOR></AUTOR>
         <PRECIO></PRECIO>
         <EDICION></EDICION>
+        <IBN></IBN>      
       </LIBRO>
     </SUBG>
 
@@ -117,10 +126,11 @@
       <SG>SALUD</SG>
       <LIBRO>
         <DISP></DISP>
-        <TITULO>PEPE</TITULO>
+        <TITULO></TITULO>
         <AUTOR></AUTOR>
         <PRECIO></PRECIO>
         <EDICION></EDICION>
+        <IBN></IBN>
       </LIBRO>
     </SUBG>
 
@@ -132,9 +142,8 @@
         <AUTOR></AUTOR>
         <PRECIO></PRECIO>
         <EDICION></EDICION>
+        <IBN></IBN>
       </LIBRO>
     </SUBG>
-
   </GENERO>
-
 </GLOBAL>
