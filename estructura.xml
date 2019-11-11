@@ -9,48 +9,62 @@
     <SUBG>
       <SG>MISTERIO</SG>
       <LIBRO>
-        <DISP></DISP>
+        <DISP>SI</DISP>
         <TITULO>The Best Misteries of Isaac Asimov</TITULO>
         <AUTOR>Isaac Asimov</AUTOR>
         <PRECIO>19.99€</PRECIO>
         <EDICION>Santillana</EDICION>
-        <IBN>874569321</IBN>
+        <IBN>87456932</IBN>
+        <UN_V>112254</UN_V>
+      </LIBRO>
+
+       <LIBRO>
+        <DISP>SI</DISP>
+        <TITULO>The Best Misteries of Isaac Asimov</TITULO>
+        <AUTOR>Isaac Asimov</AUTOR>
+        <PRECIO>19.99€</PRECIO>
+        <EDICION>Santillana</EDICION>
+        <IBN>87456932</IBN>
+        <UN_V>2</UN_V>
       </LIBRO>
     </SUBG>
 
     <SUBG>
       <SG>NOVELA NEGRA</SG>
       <LIBRO>
-        <DISP></DISP>
-        <TITULO> </TITULO>
-        <AUTOR></AUTOR>
-        <PRECIO></PRECIO>
-        <EDICION></EDICION>
-        <IBN></IBN>
+        <DISP>SI</DISP>
+        <TITULO>Sherlock Holmes </TITULO>
+        <AUTOR>Arthur Conan Doyle</AUTOR>
+        <PRECIO>23.00€</PRECIO>
+        <EDICION>SM</EDICION>
+        <IBN>13246595</IBN>
+        <UN_V>1122</UN_V>
       </LIBRO>
     </SUBG>
 
     <SUBG>
       <SG>ROMANCE</SG>
       <LIBRO>
-        <DISP></DISP>
-        <TITULO> </TITULO>
-        <AUTOR></AUTOR>
-        <PRECIO></PRECIO>
-        <EDICION></EDICION>
-        <IBN></IBN>
+        <DISP>SI</DISP>
+        <TITULO>Cumbres Borrascosas</TITULO>
+        <AUTOR>Emily Brontë</AUTOR>
+        <PRECIO>15.00€</PRECIO>
+        <EDICION>Penguin</EDICION>
+        <IBN>18642647</IBN>
+        <UN_V>112254</UN_V>
       </LIBRO>
     </SUBG>
 
     <SUBG>
       <SG>FANTASIA</SG>
       <LIBRO>
-        <DISP></DISP>
-        <TITULO> </TITULO>
-        <AUTOR></AUTOR>
-        <PRECIO></PRECIO>
-        <EDICION></EDICION>
-        <IBN></IBN>
+        <DISP>SI</DISP>
+        <TITULO>The Witcher: The Last Wish</TITULO>
+        <AUTOR>Andrew Sapkoswki</AUTOR>
+        <PRECIO>25.00€</PRECIO>
+        <EDICION>Santilla</EDICION>
+        <IBN>789</IBN>
+        <UN_V>1154</UN_V>
       </LIBRO>
     </SUBG>
 
@@ -59,50 +73,41 @@
   <GENERO>
     <NOMBRE>LITERATURA</NOMBRE>
     <SUBG>
-      <SG>LIRICA</SG>
-      <LIBRO>
-        <DISP></DISP>
-        <TITULO> </TITULO>
-        <AUTOR></AUTOR>
-        <PRECIO></PRECIO>
-        <EDICION></EDICION>
-        <IBN></IBN>
-      </LIBRO>
-    </SUBG>
-
-    <SUBG>
       <SG>POESIA</SG>
       <LIBRO>
-        <DISP></DISP>
-        <TITULO> </TITULO>
-        <AUTOR></AUTOR>
-        <PRECIO></PRECIO>
-        <EDICION></EDICION>
-        <IBN></IBN>
+        <DISP>NO</DISP>
+        <TITULO>-</TITULO>
+        <AUTOR>-</AUTOR>
+        <PRECIO>-</PRECIO>
+        <EDICION>-</EDICION>
+        <IBN>-</IBN>
+        <UN_V>-</UN_V>
       </LIBRO>
     </SUBG>
 
     <SUBG>
       <SG>NOVELA</SG>
       <LIBRO>
-        <DISP></DISP>
-        <TITULO> </TITULO>
-        <AUTOR></AUTOR>
-        <PRECIO></PRECIO>
-        <EDICION></EDICION>
-        <IBN></IBN>
+        <DISP>NO</DISP>
+        <TITULO>Don Quijote de la Mancha</TITULO>
+        <AUTOR>Miguel de Cervantes</AUTOR>
+        <PRECIO>10.00€</PRECIO>
+        <EDICION>SM</EDICION>
+        <IBN>7894</IBN>
+        <UN_V>123444</UN_V>
       </LIBRO>
     </SUBG>
 
     <SUBG>
       <SG>TEATRO</SG>
       <LIBRO>
-        <DISP></DISP>
-        <TITULO> </TITULO>
-        <AUTOR></AUTOR>
-        <PRECIO></PRECIO>
-        <EDICION></EDICION>
-        <IBN></IBN>
+        <DISP>NO</DISP>
+        <TITULO>La vida es sueño</TITULO>
+        <AUTOR>Calderón de la Barca</AUTOR>
+        <PRECIO>15.00€</PRECIO>
+        <EDICION>Santilla</EDICION>
+        <IBN>7899</IBN>
+        <UN_V>1232899</UN_V>
       </LIBRO>
     </SUBG>
 
@@ -113,36 +118,39 @@
     <SUBG>
       <SG>ACADEMICO</SG>
       <LIBRO>
-        <DISP></DISP>
-        <TITULO> </TITULO>
-        <AUTOR></AUTOR>
-        <PRECIO></PRECIO>
-        <EDICION></EDICION>
-        <IBN></IBN>      
+        <DISP>SI</DISP>
+        <TITULO>Ciencia para Dummies</TITULO>
+        <AUTOR>Varios</AUTOR>
+        <PRECIO>20.00€</PRECIO>
+        <EDICION>Para Dummies</EDICION>
+        <IBN>4567</IBN>      
+        <UN_V>32899</UN_V>
       </LIBRO>
     </SUBG>
 
     <SUBG>
       <SG>SALUD</SG>
       <LIBRO>
-        <DISP></DISP>
-        <TITULO></TITULO>
-        <AUTOR></AUTOR>
-        <PRECIO></PRECIO>
-        <EDICION></EDICION>
-        <IBN></IBN>
+        <DISP>SI</DISP>
+        <TITULO>La cocina de la salud</TITULO>
+        <AUTOR>Varios</AUTOR>
+        <PRECIO>9.99€</PRECIO>
+        <EDICION>Planeta</EDICION>
+        <IBN>7899</IBN>
+        <UN_V>1899</UN_V>
       </LIBRO>
     </SUBG>
 
     <SUBG>
       <SG>CIENTIFICOS</SG>
       <LIBRO>
-        <DISP></DISP>
-        <TITULO> </TITULO>
-        <AUTOR></AUTOR>
-        <PRECIO></PRECIO>
-        <EDICION></EDICION>
-        <IBN></IBN>
+        <DISP>NO</DISP>
+        <TITULO>Redes de Computadores</TITULO>
+        <AUTOR>Kurose y Ross</AUTOR>
+        <PRECIO>57.00€</PRECIO>
+        <EDICION>Pearson</EDICION>
+        <IBN>78945</IBN>
+        <UN_V>12539</UN_V>
       </LIBRO>
     </SUBG>
   </GENERO>
