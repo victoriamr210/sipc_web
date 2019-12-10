@@ -63,46 +63,5 @@
 <tr></tr>
 </table>
 <br>
-<table>
-<tr>
-<th> Posici&oacute;n </th><th>FICCION</th><th> Unidades vendidas </th>
-</tr>
-<tr>
-<td>1. </td><td>MISTERIO</td><td>1122542</td>
-</tr>
-<tr>
-<td>2. </td><td>NOVELA NEGRA</td><td>1122</td>
-</tr>
-<tr>
-<td>3. </td><td>ROMANCE</td><td>112254</td>
-</tr>
-<tr>
-<td>4. </td><td>FANTASIA</td><td>1154</td>
-</tr>
-<tr>
-<th> Posici&oacute;n </th><th>LITERATURA</th><th> Unidades vendidas </th>
-</tr>
-<tr>
-<td>1. </td><td>POESIA</td><td>9283</td>
-</tr>
-<tr>
-<td>2. </td><td>NOVELA</td><td>123444</td>
-</tr>
-<tr>
-<td>3. </td><td>TEATRO</td><td>1232899</td>
-</tr>
-<tr>
-<th> Posici&oacute;n </th><th>NO FICCION</th><th> Unidades vendidas </th>
-</tr>
-<tr>
-<td>1. </td><td>ACADEMICO</td><td>32899</td>
-</tr>
-<tr>
-<td>2. </td><td>SALUD</td><td>1899</td>
-</tr>
-<tr>
-<td>3. </td><td>CIENTIFICOS</td><td>12539</td>
-</tr>
-</table>
-</body>
+<a>G&eacute;nero: </a>MISTERIO<a> se han vendido: </a>1122542<a>G&eacute;nero: </a>NOVELA NEGRA<a> se han vendido: </a>1122<a>G&eacute;nero: </a>ROMANCE<a> se han vendido: </a>112254<a>G&eacute;nero: </a>FANTASIA<a> se han vendido: </a>1154<a>G&eacute;nero: </a>POESIA<a> se han vendido: </a>9283<a>G&eacute;nero: </a>NOVELA<a> se han vendido: </a>123444<a>G&eacute;nero: </a>TEATRO<a> se han vendido: </a>1232899<a>G&eacute;nero: </a>ACADEMICO<a> se han vendido: </a>32899<a>G&eacute;nero: </a>SALUD<a> se han vendido: </a>1899<a>G&eacute;nero: </a>CIENTIFICOS<a> se han vendido: </a>12539</body>
 </HTML>

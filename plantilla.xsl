@@ -59,21 +59,30 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         </xsl:for-each>
         </table>
         <br/>
+        <table>
         <xsl:for-each select="GLOBAL/GENERO">
+          <tr>
+            <th> Posición </th>
+            <th> <xsl:value-of select="NOMBRE"/> </th>
+            <th> Unidades vendidas </th>
+          </tr>
           <xsl:for-each select="SUBG">
-            <ul>
-              <li>
-                <a>Género: </a>
-                <xsl:value-of select="SG"/>
-                <a> se han vendido: </a>
-                <xsl:for-each select="LIBRO">
-                <xsl:variable name="t" select="UN_V"/>
-                  <xsl:value-of select="sum($t)"/>
-                </xsl:for-each>
-              </li>
-            </ul>
+            <tr>
+               <td> <xsl:number value = "position()" format="1. "/></td>
+                <td><xsl:value-of select="SG"/></td>
+                <td>
+                  <xsl:for-each select="LIBRO">
+                    <!-- <xsl:number value="UN_V"/> -->
+                    <!-- <xsl:variable name="t" select="UN_V"/> -->
+                    <xsl:variable name="aux" select="number(UN_V)"/>
+                    <!-- <xsl:variable name="suma" select="sum($aux)"/> -->
+                    <xsl:value-of select="$aux"/>
+                  </xsl:for-each>
+                </td> 
+            </tr>
           </xsl:for-each>
         </xsl:for-each>
+        </table>
       </body> 
     </HTML> 
   </xsl:template> 

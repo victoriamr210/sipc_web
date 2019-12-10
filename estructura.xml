@@ -76,12 +76,12 @@
       <SG>POESIA</SG>
       <LIBRO>
         <DISP>NO</DISP>
-        <TITULO>-</TITULO>
-        <AUTOR>-</AUTOR>
-        <PRECIO>-</PRECIO>
-        <EDICION>-</EDICION>
-        <IBN>-</IBN>
-        <UN_V>-</UN_V>
+        <TITULO>Romacero</TITULO>
+        <AUTOR>Federico García Lorca</AUTOR>
+        <PRECIO>10.00€</PRECIO>
+        <EDICION>Santillana</EDICION>
+        <IBN>123</IBN>
+        <UN_V>9283</UN_V>
       </LIBRO>
     </SUBG>
 
