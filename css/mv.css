@@ -1,4 +1,10 @@
+body {
+    margin: 0;
+}
+
 table {
+    margin-left: 20px;
+    margin-right: 50px;
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -23,8 +29,21 @@ th {
 }
 
 h1 {
-    background-color: grey;
+    margin-top: 5px;
+    background-color: #9cb7e6;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-bottom: 8px;
 }
+ 
+.navbar .search-container button {
+	margin-top: 6px;
+	margin-left: 4px;
+	padding: 4.5px 10px; 
+}
+  
+/* .navbar .search-container {
+  margin-top: auto;
+	margin-bottom: auto;
+} */

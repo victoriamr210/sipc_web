@@ -20,12 +20,12 @@
 
        <LIBRO>
         <DISP>SI</DISP>
-        <TITULO>The Best Misteries of Isaac Asimov</TITULO>
+        <TITULO>Sherlock Holmes</TITULO>
         <AUTOR>Isaac Asimov</AUTOR>
         <PRECIO>19.99€</PRECIO>
         <EDICION>Santillana</EDICION>
         <IBN>87456932</IBN>
-        <UN_V>2</UN_V>
+        <UN_V>3000</UN_V>
       </LIBRO>
     </SUBG>
 

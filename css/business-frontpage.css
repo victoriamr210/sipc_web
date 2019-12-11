@@ -1,0 +1,28 @@
+/*!
+ * Start Bootstrap - Busines Frontpage (https://startbootstrap.com/template-overviews/business-frontpage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+
+ 
+body {
+  padding-top: 56px;
+}
+
+.bg-register {
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  background-image: url("../Imagenes/books-headers.jpg");
+  /* -webkit-transform: scaleX(-1); */
+  /* filter:brightness(0.5); */
+  float: center;
+}
+
+h1{
+    filter:brightness(1);
+}
+
+.search-container {
+  margin-top: auto;
+  margin-bottom: auto;
+}
