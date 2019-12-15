@@ -5,6 +5,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <!-- main del documento el match -->
   <HTML> 
     <head>
+      <title>Librería EVE</title>
+  <link rel = "icon" type = "image/png" href = "Imagenes/bokk1.png"/>
+
+
       <link rel="stylesheet" type="text/css" href="css/mv.css"/>
       <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
       <link href="css/business-frontpage.css" rel="stylesheet"/>
@@ -38,6 +42,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                   <input type="text" placeholder="Buscar..." name="titulo"/>
                   <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
+               <li class="nav-item">
+                <a class="nav-link" href="info.html">Log In</a>
+              </li>
               </ul>
             </div>
           </div>
@@ -101,6 +108,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <footer class="py-5 bg-dark">
+          <div class="container">
+            <p class="m-0 text-center text-white">Copyright © Librería EVE 2019</p>
+          </div>
+          <!-- /.container -->
+        </footer>
+
       </body> 
     </HTML> 
   </xsl:template> 

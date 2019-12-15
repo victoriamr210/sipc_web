@@ -1,43 +1,141 @@
 <!DOCTYPE html>
-<html>
-    <head>
-				<!-- <link rel="stylesheet" type="text/css" href="css/mv.css"/> -->
-				<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-				<link href="css/business-frontpage.css" rel="stylesheet"/>
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-			</head>
+<html lang="en">
 
-	<body>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-					<div class="container">
-						<!-- <a class="navbar-brand" href="#">Start Bootstrap</a> -->
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarResponsive">
-							<ul class="navbar-nav ml-auto">
-								<li class="nav-item">
-									<a class="nav-link" href="index.html">Inicio
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="libros.html">Libros</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="mas_vendidos.html">Más vendidos</a>
-								</li>
-								<li class="nav-item active">
-									<a class="nav-link" href="#">¿Quienes somos?
-										<span class="sr-only">(current)</span>
-									</a>
-								</li>
-								<div class="search-container">
-										<input type="text" placeholder="Buscar..." name="titulo">
-										<button type="submit"><i class="fa fa-search"></i></button>
-									</div>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Librería EVE</title>
+  <link rel = "icon" type = "image/png" href = "Imagenes/bokk1.png">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+
+  <!-- Pal botón -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+	<script>
+		twitter_e = 'https://twitter.com/estherxjp'
+		instagram_e = 'https://www.instagram.com/esther_jp/'
+		linkedin_e = 'https://www.linkedin.com/in/esther-jorge-paramio-275567198/'
+
+		twitter_edu = 'https://twitter.com/EduardoJDH'
+		instagram_edu = 'https://www.instagram.com/eduardodiazzh/'
+		linkedin_edu = 'https://www.linkedin.com/in/eduardo-d%C3%ADaz-hern%C3%A1ndez-bb6655199/'
+
+		twitter_v = 'https://twitter.com/VictoriaMR210'
+		linkedin_v = 'https://www.linkedin.com/in/victoria-manrique-rolo-4a3656199/'
+
+		function myFunction(s) {
+			window.open(s);
+		}	
+	</script>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <!-- <a class="navbar-brand" href="#">Start Bootstrap</a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="libros.html">Libros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mas_vendidos.html">Más vendidos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="info.html">¿Quienes somos?
+								<span class="sr-only">(current)</span>
+						</a>
+          </li>
+          <div class="search-container">
+              <input type="text" placeholder="Buscar..." name="titulo">
+              <button type="submit"><i class="fa fa-search"></i></button>
+						</div>
+						<li class="nav-item">
+								<a class="nav-link" href="login.html">Log In</a>
+						</li>
+					</li>
+        </ul>
+      </div>
+    </div>
+	</nav>
+	<div class="bg-light py-5">
+			<div class="container py-5">
+				<div class="row mb-4">
+					<div class="col-lg-5">
+						<h1>Nuestro equipo</h1>
+						<p class="font-italic">Las personas que trabajan para los clientes tengan la mejor experiencia</p>
+					</div>
+				</div>
+		
+				<div class="row text-center">
+					<!-- Team item-->
+					<div class="col-xl-3 col-sm-6 mb-5">
+						<div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834132/avatar-4_ozhrib.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+							<h5 class="mb-0">Eduardo Díaz Hernández</h5><span class="small text-uppercase text-muted">CEO</span>
+							<ul class="social mb-0 list-inline mt-3">
+								<li class="list-inline-item"><a href="#" onclick="myFunction(twitter_edu)" class="social-link"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#" onclick="myFunction(instagram_edu)" class="social-link"><i class="fa fa-instagram"></i></a></li>
+								<li class="list-inline-item"><a href="#" onclick="myFunction(linkedin_edu)" class="social-link"><i class="fa fa-linkedin"></i></a></li>
 							</ul>
 						</div>
 					</div>
-				</nav>
-	</body>
-</html>
+					<!-- End-->
+		
+					<!-- Team item-->
+					<div class="col-xl-3 col-sm-6 mb-5">
+						<div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834130/avatar-3_hzlize.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+							<h5 class="mb-0">Esther Jorge </br>Paramio</h5><span class="small text-uppercase text-muted">CEO</span>
+							<ul class="social mb-0 list-inline mt-3">
+								<!-- <li class="list-inline-item"><a href="https://twitter.com/estherxjp" class="social-link"><i class="fa fa-twitter"></i></a></li> -->
+								<li class="list-inline-item"><a href="#" onclick="myFunction(twitter_e)" class="social-link"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#" onclick="myFunction(instagram_e)" class="social-link"><i class="fa fa-instagram"></i></a></li>
+								<li class="list-inline-item"><a href="#" onclick="myFunction(linkedin_e)" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- End-->
+		
+					<!-- Team item-->
+					<div class="col-xl-3 col-sm-6 mb-5">
+						<div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834133/avatar-2_f8dowd.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+							<h5 class="mb-0">Victoria Manrique Rolo</h5><span class="small text-uppercase text-muted">CEO</span>
+							<ul class="social mb-0 list-inline mt-3">
+								<li class="list-inline-item"><a href="#" onclick="myFunction(twitter_v)" class="social-link"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a href="#" onclick="myFunction(linkedin_v)" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- End-->
+		
+				</div>
+			</div>
+		</div>
+		
+		<footer class="py-5 bg-dark">
+			<div class="container">
+				<p class="m-0 text-center text-white">Copyright &copy; Librería EVE 2019</p>
+			</div>
+			<!-- /.container -->
+		</footer>
+	
+
+ </body>
+
+ </html>
