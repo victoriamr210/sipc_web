@@ -21,7 +21,6 @@
   <!-- Pal botón -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <script src="js/index.js"></script>
 
 </head>
 
@@ -74,6 +73,10 @@
             <div class="card-body">
               <h5 class="card-title text-center">Register</h5>
               <form class="form-signin">
+                <div class="form-label-group">
+                  <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
+                  <label for="inputUserame">Username</label>
+                </div>
   
                 <div class="form-label-group">
                   <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
@@ -87,19 +90,16 @@
                   <label for="inputPassword">Password</label>
                 </div>
                 
-                <a id="logIn" class="rm-a" href="login.html">
-                  <button class="btn btn-lg btn-primary btn-block text-uppercase" id="logIn" type="submit" onclick="mailLogin()">Log
-                    In</button>
-                </a>
-                <!-- <a class="d-block text-center mt-2 small" href="#">Log In</a> -->
-
+                <div class="form-label-group">
+                  <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputConfirmPassword">Confirm password</label>
+                </div>
+  
+                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+                <a class="d-block text-center mt-2 small" href="#">Sign In</a>
                 <hr class="my-4">
                 <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign up with Google</button>
                 <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign up with Facebook</button>
-                  <h5 class="nav-item active">
-                    <a class="nav-link" href="signup.html">¿No tienes cuenta? Registrate
-                    </a>
-                  </h5>
               </form>
             </div>
           </div>
@@ -113,25 +113,6 @@
         </div>
         <!-- /.container -->
     </footer>
-
-    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-auth.js"></script>
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyDt-4nQ34xJ6DDy9KVXaoSj7S164dfHQmQ",
-        authDomain: "sipc-web-ab169.firebaseapp.com",
-        databaseURL: "https://sipc-web-ab169.firebaseio.com",
-        projectId: "sipc-web-ab169",
-        storageBucket: "sipc-web-ab169.appspot.com",
-        messagingSenderId: "561462445785",
-        appId: "1:561462445785:web:df7fb8fe481519395ea0c8"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
