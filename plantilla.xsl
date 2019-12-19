@@ -43,7 +43,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                   <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
                <li class="nav-item">
-                <a class="nav-link" href="info.html">Log In</a>
+                <a class="nav-link" href="login.html">Log In</a>
               </li>
               </ul>
             </div>
@@ -115,7 +115,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
           </div>
           <!-- /.container -->
         </footer>
-
       </body> 
     </HTML> 
   </xsl:template> 
