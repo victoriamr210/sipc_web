@@ -29,8 +29,8 @@ function mailLogin() {
 
   firebase.auth().signInWithEmailAndPassword(email, password)
     .then(
-      // login.setAttribute("href", "index.html")
-      alert("juan")
+      login.setAttribute("href", "index.html")
+      // alert("juan")
     )
     .catch(function (error) {
       var errorCode = error.code;
