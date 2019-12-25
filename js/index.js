@@ -1,3 +1,4 @@
+
 // Your web app's Firebase configuration
 // var firebaseConfig = {
 //   apiKey: "AIzaSyDt-4nQ34xJ6DDy9KVXaoSj7S164dfHQmQ",
@@ -8,15 +9,17 @@
 //   messagingSenderId: "561462445785",
 //   appId: "1:561462445785:web:df7fb8fe481519395ea0c8"
 // };
-// Initialize Firebase
+// // Initialize Firebase
 // firebase.initializeApp(firebaseConfig);
-// var database = firebase.database();
+// const db = firebase.database();
 
 // const functions = require('firebase-functions');
 console.log("ok");
 function pepe() {
   alert("porque");
 }
+
+const hp = false;
 
 
 function mailLogin() {
@@ -36,5 +39,21 @@ function mailLogin() {
       var errorCode = error.code;
       var errorMessage = error.message;
     });
+
+}
+
+
+function getinfo(id){
+  // const db = firebase.firestore();
+  var ref = db.collection("libros").doc(''+id);
+  var name;
+  ref.get().then(function(doc){
+    console.log(doc.data());
+  });
+
+  // window.open("../book.html")
+  
+  // var name = db.ref('/libros/'+ id + 'nombre');
+  // console.log(name);
 
 }

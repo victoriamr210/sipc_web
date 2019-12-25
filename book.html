@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" href="Imagenes/bokk1.png">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Librería EVE</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+
+  <!-- Pal botón -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script src="js/index.js"></script>
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <!-- <a class="navbar-brand" href="#">Start Bootstrap</a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="libros.html">Libros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mas_vendidos.html">Más vendidos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="info.html">¿Quienes somos?</a>
+          </li>
+          <div class="search-container">
+            <input type="text" placeholder="Buscar..." name="titulo">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3 col-xs-2">
+
+        <h1 class="my-4">Librería EVE</h1>
+        <div class="list-group">
+          <a href="ficcion.html" class="list-group-item">Ficción</a>
+          <a href="literatura.html" class="list-group-item">Literatura</a>
+          <a href="no_ficcion.html" class="list-group-item">No ficción</a>
+        </div>
+
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+        <br />
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 col-xs-3">
+            <!-- <div class="card h-100"> -->
+              <a href="#"><img class="card-img-top" src="Imagenes/hp.jpg" alt=""></a>
+            </div>
+              <!-- <div class="card-body"> -->
+                <div class="col-lg-7 col-md-8 mb-6 col-xs-9">
+                  <h3 class="card-title">Harry Potter y la piedra filosofal</h3>
+                  <h5>19.99€</h5>
+                  <p class="card-text"><strong>Autor:</strong> J.K.Rowling</p>
+                  <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Amet numquam aspernatur!</p>
+                  <p class="card-text"><strong>Precio:</strong> 19.99</p>
+                    <a class="btn btn-primary btn-lg" href="#">Reserva &raquo;</a>
+                  </div>
+              <!-- </div> -->
+            </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-3 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Librería EVE 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDt-4nQ34xJ6DDy9KVXaoSj7S164dfHQmQ",
+      authDomain: "sipc-web-ab169.firebaseapp.com",
+      databaseURL: "https://sipc-web-ab169.firebaseio.com",
+      projectId: "sipc-web-ab169",
+      storageBucket: "sipc-web-ab169.appspot.com",
+      messagingSenderId: "561462445785",
+      appId: "1:561462445785:web:df7fb8fe481519395ea0c8"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db =firebase.firestore();
+  </script>
+  
+  <!-- Previously loaded Firebase SDKs -->
+  
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
+  
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
