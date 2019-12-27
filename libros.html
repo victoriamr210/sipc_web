@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel = "icon" type = "image/png" href = "Imagenes/bokk1.png">
+  <link rel="icon" type="image/png" href="Imagenes/bokk1.png">
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,6 +16,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/shop-homepage.css" rel="stylesheet">
+  <link href="css/libros.css" rel="stylesheet">
 
   <!-- Pal botón -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,13 +24,14 @@
 
 </head>
 
-<body>
+<body onload="build_all()">
 
- <!-- Navigation -->
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <!-- <a class="navbar-brand" href="#">Start Bootstrap</a> -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -49,9 +51,9 @@
             <a class="nav-link" href="info.html">¿Quienes somos?</a>
           </li>
           <div class="search-container">
-              <input type="text" placeholder="Buscar..." name="titulo">
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </div>
+            <input type="text" placeholder="Buscar..." name="titulo">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
         </ul>
       </div>
     </div>
@@ -76,117 +78,129 @@
       <!-- /.col-lg-3 -->
 
       <div class="col-lg-9">
-        <br/>
+        <br />
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
+            <div class="card h-100" onload="build(1)">
               <a href="#"><img class="card-img-top" src="Imagenes/hp.jpg" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Harry Potter y la piedra filosofal</a>
+              <div class="card-body" >
+                <h4 class="card-title">Harry Potter y la piedra filosofal     
+                  <i class="down" onclick="getinfo(1);"></i>
                 </h4>
-                <h5>19.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> J.K.Rowling</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <div id="desp1" class="fb-card">
+                  <h5 id="pr"></h5>
+                  <p class="card-text" id="au1">
+                  </p>
                 </div>
-                <button onclick="getinfo(1)"> pepe </button>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="Imagenes/cumbres-borrascosas.jpg" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Cumbres borrascosas</a>
-                </h4>
-                <h5>23.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> Emily Brontë</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-                </div>
-          </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="Imagenes/ag.jpg" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Asesinato en el Orient Express</a>
-                </h4>
-                <h5>23.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> Agatha Christie</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+              </div>
               </div>
             </div>
-          </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="Imagenes/cumbres-borrascosas.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">Cumbres borrascosas
+                    <i class="down" onclick="getinfo(2);"></i>
+                  </h4>
+                  <div id="desp2" class="fb-card">
+                              <h5 id="pr"></h5>
+                              <p class="card-text" id="au2"></p>
+                            </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="Imagenes/ag.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">Asesinato en el Orient Express
+                    <i class="down" onclick="getinfo(3);"></i>
+                  </h4>
+                  <div id="desp3" class="fb-card">
+                              <h5 id="pr"></h5>
+                              <p class="card-text" id="au3"></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+        <div class="row">
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="Imagenes/lavidaessueño.jpg" alt=""></a>
               <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#">La vida es un sueño</a>
+                <h4 class="card-title">La vida es sueño 
+                  <i class="down" onclick="getinfo(4);"></i>
                 </h4>
-                <h5>48.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> Pedro Calderón De La Barca</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <div id="desp4" class="fb-card">
+                  <h5 id="pr"></h5>
+                  <p class="card-text" id="au4"></p>
+                </div>
               </div>
             </div>
           </div>
-
+          
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="Imagenes/kurose.jpg" alt=""></a>
               <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#">Redes de computadores</a>
+                <h4 class="card-title">Redes de computadores 
+                  <i class="down" onclick="getinfo(5);"></i>
                 </h4>
-                <h5>48.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> James F. Kurose y Keith W. Rose</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <div id="desp5" class="fb-card">
+                  <h5 id="pr"></h5>
+                  <p class="card-text" id="au5"></p>
+                </div>
               </div>
             </div>
           </div>
-
+          
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="Imagenes/cocina.jpg" alt=""></a>
               <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Recetas sabrosas sin lactosa</a>
+                <h4 class="card-title">Recetas sabrosas sin lactosa 
+                  <i class="down" onclick="getinfo(6);"></i>
                 </h4>
-                <h5>89.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> Simone Maus</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <div id="desp6" class="fb-card">
+                  <h5 id="pr"></h5>
+                  <p class="card-text" id="au6"></p>
+                </div>
               </div>
             </div>
           </div>
-
+        </div>
+        
+        <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="Imagenes/romancero.jpg" alt=""></a>
               <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Romancero gitano</a>
+                <h4 class="card-title">Romancero gitano 
+                  <i class="down" onclick="getinfo(7);"></i>
                 </h4>
-                <h5>8.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> Federico García Lorca</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <div id="desp7" class="fb-card">
+                  <h5 id="pr"></h5>
+                  <p class="card-text" id="au7"></p>
+                </div>
               </div>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="Imagenes/dqm.jpg" alt=""></a>
               <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Don Quijote de la Mancha</a>
+                <h4 class="card-title">Don Quijote de la Mancha 
+                  <i class="down" onclick="getinfo(8);"></i> 
                 </h4>
-                <h5>8.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> Miguel De Cervantes</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <div id="desp8" class="fb-card">
+                  <h5 id="pr"></h5>
+                  <p class="card-text" id="au8"></p>
+                </div>
               </div>
             </div>
           </div>
@@ -225,8 +239,8 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-    const db=firebase.firestore();
-    db.settings({timestampsInSnapshots: true});
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true });
   </script>
   <script src="js/index.js"></script>
 
