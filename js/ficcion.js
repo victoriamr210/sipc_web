@@ -5,7 +5,7 @@ function show_book(doc){
   let name=document.createElement('span');
 
   li.setAttribute('data-id', doc.id);
-  name.textContent=doc.data().name;
+  name.textContent=doc.data().nombre;
   li.appendChild(name);
   hey.appendChild(li);
 }
@@ -15,6 +15,9 @@ db.collection('libros').get().then((snapshot) =>{
     show_book(doc);
   });
 });
+
+
+
 
 // const cafeList = document.querySelector('#cafe-list');
 
