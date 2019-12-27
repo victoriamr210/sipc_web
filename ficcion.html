@@ -86,12 +86,14 @@
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="Imagenes/hp.jpg" alt=""></a>
               <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Harry Potter y la piedra filosofal</a>
+                <h4 class="card-title">Harry Potter y la piedra filosofal
+                  <i class="down" onclick="getinfo(1);"></i>
                 </h4>
-                <h5>19.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> J.K.Rowling</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <div id="desp1" class="fb-card">
+                  <h5 id="pr"></h5>
+                  <p class="card-text" id="au1">
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -100,12 +102,13 @@
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="Imagenes/cumbres-borrascosas.jpg" alt=""></a>
               <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Cumbres borrascosas</a>
+                <h4 class="card-title">Cumbres borrascosas
+                  <i class="down" onclick="getinfo(2);"></i>
                 </h4>
-                <h5>23.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> Emily Brontë</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                <div id="desp2" class="fb-card">
+                  <h5 id="pr"></h5>
+                  <p class="card-text" id="au2"></p>
+                </div>
               </div>
             </div>
           </div>
@@ -114,12 +117,13 @@
               <div class="card h-100">
                 <a href="#"><img class="card-img-top" src="Imagenes/ag.jpg" alt=""></a>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Asesinato en el Orient Express</a>
+                  <h4 class="card-title">Asesinato en el Orient Express
+                    <i class="down" onclick="getinfo(3);"></i>
                   </h4>
-                  <h5>23.99€</h5>
-                  <p class="card-text"><strong>Autor:</strong> Agatha Christie</p>
-                  <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                  <div id="desp3" class="fb-card">
+                    <h5 id="pr"></h5>
+                    <p class="card-text" id="au3"></p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -142,6 +146,26 @@
     </div>
     <!-- /.container -->
   </footer>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-auth.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDt-4nQ34xJ6DDy9KVXaoSj7S164dfHQmQ",
+      authDomain: "sipc-web-ab169.firebaseapp.com",
+      databaseURL: "https://sipc-web-ab169.firebaseio.com",
+      projectId: "sipc-web-ab169",
+      storageBucket: "sipc-web-ab169.appspot.com",
+      messagingSenderId: "561462445785",
+      appId: "1:561462445785:web:df7fb8fe481519395ea0c8"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true });
+  </script>
+  <script src="js/index.js"></script>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>

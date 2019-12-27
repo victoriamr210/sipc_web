@@ -86,12 +86,13 @@
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="Imagenes/lavidaessueño.jpg" alt=""></a>
               <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#">La vida es un sueño</a>
+                <h4 class="card-title">La vida es sueño
+                  <i class="down" onclick="getinfo(4);"></i>
                 </h4>
-                <h5>48.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> Pedro Calderón De La Barca</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <div id="desp4" class="fb-card">
+                  <h5 id="pr"></h5>
+                  <p class="card-text" id="au4"></p>
+                </div>
               </div>
             </div>
           </div>
@@ -100,12 +101,13 @@
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="Imagenes/romancero.jpg" alt=""></a>
               <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Romancero gitano</a>
+                <h4 class="card-title">Romancero gitano
+                  <i class="down" onclick="getinfo(7);"></i>
                 </h4>
-                <h5>8.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> Federico García Lorca</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <div id="desp7" class="fb-card">
+                  <h5 id="pr"></h5>
+                  <p class="card-text" id="au7"></p>
+                </div>
               </div>
             </div>
           </div>
@@ -114,12 +116,13 @@
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="Imagenes/dqm.jpg" alt=""></a>
               <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Don Quijote de la Mancha</a>
+                <h4 class="card-title">Don Quijote de la Mancha
+                  <i class="down" onclick="getinfo(8);"></i> 
                 </h4>
-                <h5>8.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> Miguel De Cervantes</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <div id="desp8" class="fb-card">
+                  <h5 id="pr"></h5>
+                  <p class="card-text" id="au8"></p>
+                </div>
               </div>
             </div>
           </div>
@@ -143,7 +146,26 @@
     </div>
     <!-- /.container -->
   </footer>
-
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-auth.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDt-4nQ34xJ6DDy9KVXaoSj7S164dfHQmQ",
+      authDomain: "sipc-web-ab169.firebaseapp.com",
+      databaseURL: "https://sipc-web-ab169.firebaseio.com",
+      projectId: "sipc-web-ab169",
+      storageBucket: "sipc-web-ab169.appspot.com",
+      messagingSenderId: "561462445785",
+      appId: "1:561462445785:web:df7fb8fe481519395ea0c8"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true });
+  </script>
+  <script src="js/index.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

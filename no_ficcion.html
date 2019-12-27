@@ -86,26 +86,28 @@
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="Imagenes/kurose.jpg" alt=""></a>
               <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#">Redes de computadores</a>
+                <h4 class="card-title">Redes de computadores
+                  <i class="down" onclick="getinfo(5);"></i>
                 </h4>
-                <h5>48.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> James F. Kurose y Keith W. Rose</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <div id="desp5" class="fb-card">
+                  <h5 id="pr"></h5>
+                  <p class="card-text" id="au5"></p>
                 </div>
             </div>
           </div>
-
+        </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="Imagenes/cocina.jpg" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Recetas sabrosas sin lactosa</a>
+                  Recetas sabrosas sin lactosa
+                  <i class="down" onclick="getinfo(6);"></i>
                 </h4>
-                <h5>89.99€</h5>
-                <p class="card-text"><strong>Autor:</strong> Simone Maus</p>
-                <p class="card-text"><strong>Sinopsis: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <div id="desp6" class="fb-card">
+                  <h5 id="pr"></h5>
+                  <p class="card-text" id="au6"></p>
+                </div>
               </div>
             </div>
           </div>
@@ -128,6 +130,26 @@
     </div>
     <!-- /.container -->
   </footer>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-auth.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDt-4nQ34xJ6DDy9KVXaoSj7S164dfHQmQ",
+      authDomain: "sipc-web-ab169.firebaseapp.com",
+      databaseURL: "https://sipc-web-ab169.firebaseio.com",
+      projectId: "sipc-web-ab169",
+      storageBucket: "sipc-web-ab169.appspot.com",
+      messagingSenderId: "561462445785",
+      appId: "1:561462445785:web:df7fb8fe481519395ea0c8"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true });
+  </script>
+  <script src="js/index.js"></script>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
