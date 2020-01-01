@@ -52,7 +52,10 @@
             <button type="submit"><i class="fa fa-search"></i></button>
           </div>
           <li class="nav-item">
-              <a class="nav-link" href="login.html">Log In</a>
+            <a class="nav-link" onclick="checkif()" href="#">Mi Perfil</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" onclick="checkif()" href="#" id="loginpage"> Log In</a>
           </li>
         </ul>
       </div>
@@ -176,6 +179,7 @@
     firebase.initializeApp(firebaseConfig);
   </script>
   <!-- Bootstrap core JavaScript -->
+  <script src="js/index.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 

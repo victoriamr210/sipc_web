@@ -15,7 +15,14 @@
 
 // const functions = require('firebase-functions');
 
-const hp = false;
+firebase.auth().onAuthStateChanged(user=>{
+  console.log(user)
+})
+
+function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
 
 
 function mailLogin() {
@@ -23,8 +30,11 @@ function mailLogin() {
 
   const email = document.getElementById("inputEmail").value;
   const password = document.getElementById("inputPassword").value;
+  
 
   var login = document.getElementById("logIn");
+
+  
 
   // login.setAttribute("href", "../index.html")
   // alert("juan")
@@ -51,9 +61,25 @@ function mailLogin() {
 
 }
 
-function lola(){
-  alert("lola");
+
+function signUp(){
+
+  const email = document.getElementById("inputEmail").value;
+  const password = document.getElementById("inputPassword").value;
+
+  const username = document.getElementById("inputUsername").value;
+  const passwordcon = document.getElementById("inputConfirmPassword").value;
+
+  if (validateEmail(email)) {
+    if (password === passwordcon) {
+      firebase.auth().createUserWithEmailAndPassword(email, password).then(cred => {
+        console.log(cred);
+      })
+    }
+  }
 }
+
+
 
 
 function hola(id){
@@ -98,21 +124,6 @@ function build_all(){
 }
 
 function getinfo(id){
-
-
-  // build(id);
-  // const card = document.querySelector("#desp");
-  // const par = document.querySelector("#au");
-  // var ref = db.collection("libros").doc('' + id);
-  // let h5 = document.createElement('h5');
-  // let p = document.createElement('p');
-  // ref.get().then(function (doc) {
-  //   console.log(doc.data());
-  //   h5.textContent = doc.data().precio;
-  //   p.textContent = doc.data().autor;
-  //   par.appendChild(p);
-  //   card.appendChild(h5);
-  // });
   var s = "desp"+id;
   var x = document.getElementById(s);
   // var col = document.getElementsByClassName("card-body");
@@ -124,16 +135,79 @@ function getinfo(id){
     x.style.display = "none";
   }
 
-  // for(i=0; i<col.length; i++){
-  //   col[i].addEventListener("click", function(){
-  //   var content = this.nextElementSibling;
-  //   if (content.style.display === "block") {
-  //     content.style.display = "none";
-  //   } else {
-  //     content.style.display = "block";
-  //   }
-  // });
-  // }
+  
+}
+
+function getinfouser(){
+  var email;
+  var uemail= document.getElementById("uemail");
+  var ref; 
+  var uname = document.getElementById("username");
+  var cuser = firebase.auth().currentUser;
+
+
+  firebase.auth().onAuthStateChanged(function (user){
+    email=user.email;
+    console.log(email);
+    uemail.innerText=email;
+    ref = db.collection("user").doc('' + user.uid);
+    ref.get().then(function (doc) {
+      uname.innerText = doc.data().name;
+    })
+  })
+
+  
+
+  
+
+}
+
+function checkif(){
+  // var user = firebase.auth().currentUser;
+  var log = document.getElementById("loginpage");
+  firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+      window.location.href = "perfil.html";
+
+      // User is signed in.
+    } else {
+      window.location.href = "login.html";
+
+      // No user is signed in.
+    }
+  })
+  
+
+  
+}
+
+function logout(){
+  firebase.auth().signOut().then(() => {
+    console.log('user signed out');
+    window.location.href="index.html";
+  })
+}
+function showform(){
+  var x = document.getElementById("form");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+
+}
+
+function changeuname(){
+  const uname = document.getElementById("inputUname").value;
+  var form = document.getElementById("form")
+  console.log(uname);
+  firebase.auth().onAuthStateChanged(function (user) {
+
+    db.collection("user").doc(firebase.auth().currentUser.uid).set({
+    name: uname
+    })
+  });
 
   
 }
