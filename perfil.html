@@ -55,9 +55,13 @@
             <input type="text" placeholder="Buscar..." name="titulo">
             <button type="submit"><i class="fa fa-search"></i></button>
           </div>
-          <li class="nav-item active">
-            <a class="nav-link" href="login.html">Log In</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mi Perfil
+              <span class="sr-only">(current)</span>
+            </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="checkif()" href="#" id="loginpage"> Log In</a>
           </li>
         </ul>
       </div>
@@ -69,8 +73,8 @@
       <div class="row text-center">
         <div class="my-container"></div>
         <!-- Team item-->
-        <div class="col-xl-3 col-sm-3 mb-3 px-5" id="foto">
-          <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Imagenes/Campus_ULL.png" alt="" width="100"
+        <div class="col-xl-3 col-sm-4 mb-4 px-5" id="foto">
+          <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Imagenes/avatar.png" id="foto-perfil" alt="" width="100"
             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
             
           </div>
@@ -80,7 +84,7 @@
           <div class="col-xl-6 col-sm-6 mb-6 py-5">
             <h5 class="mb-0 py-4 px-4" >Nombre de usuario: </h5>
             <h5 class="mb-0 " id="username"> </h5>
-            <button class="btn btn-sm btn-primary mt-2 onclick="showform()">Cambiar username</button>
+            <button class="btn btn-sm btn-primary mt-4" onclick="showform()">Cambiar username</button>
             <div id="form" class="col-xl-12 col-sm-12 mb-12 py-3 mt-2">
               <form>
 
@@ -130,7 +134,6 @@
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
     db.settings({ timestampsInSnapshots: true });
-
     const auth = firebase.auth();
   </script>
   <script src="js/index.js"></script>

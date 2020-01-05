@@ -201,13 +201,14 @@ function showform(){
 function changeuname(){
   const uname = document.getElementById("inputUname").value;
   var form = document.getElementById("form")
-  console.log(uname);
+  // console.log(uname);
   firebase.auth().onAuthStateChanged(function (user) {
-
-    db.collection("user").doc(firebase.auth().currentUser.uid).set({
+    console.log(user.uid);
+    db.collection("user").doc(user.uid).update({
     name: uname
     })
   });
+  form.style.display = "none";
 
   
 }
