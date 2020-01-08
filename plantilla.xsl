@@ -49,58 +49,76 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             </div>
           </div>
         </nav>
-
-        <h1>Más vendidos del mes</h1>
-        <table>
-        <tr>
-          <th>Título</th>
-          <th>Autor</th>
-          <th>Precio</th>
-          <th>Unidades vendidas</th>
-          <th>Género/Subgénero</th>
-        </tr>
-        <xsl:for-each select="GLOBAL/GENERO">
-          <xsl:variable name="g" select="NOMBRE"/>
-          <xsl:for-each select="SUBG">
-            <xsl:variable name="sg" select="SG"/>
-            <xsl:for-each select="LIBRO">
-              <xsl:sort data-type="number" order="descending" select="UN_V"/>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-10 col-xs-12">
+              <h1>Más vendidos del mes</h1>
+            </div>
+          </div>
+          <!-- <div class="row"> -->
+            <div class="col-lg-12 col-md-4 col-xs-3">
+              <table>
+              <!-- <div class="row"> -->
               <tr>
-                <xsl:if test="UN_V &gt; 2000">
-                  <td><xsl:value-of select="TITULO"/></td>
-                  <td><xsl:value-of select="AUTOR"/></td>
-                  <td><xsl:value-of select="PRECIO"/></td>
-                  <td><xsl:value-of select="UN_V"/></td>
-                  <td><xsl:value-of select="concat($g,' - ',$sg)"/></td>
-                </xsl:if>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Precio</th>
+                <th>Unidades vendidas</th>
+                <th>Género/Subgénero</th>
+              </tr>
+              <!-- </div> -->
+              <xsl:for-each select="GLOBAL/GENERO">
+                <xsl:variable name="g" select="NOMBRE"/>
+                <xsl:for-each select="SUBG">
+                  <xsl:variable name="sg" select="SG"/>
+                  <xsl:for-each select="LIBRO">
+                    <xsl:sort data-type="number" order="descending" select="UN_V"/>
+                    <tr>
+                      <xsl:if test="UN_V &gt; 2000">
+                        <td><xsl:value-of select="TITULO"/></td>
+                        <td><xsl:value-of select="AUTOR"/></td>
+                        <td><xsl:value-of select="PRECIO"/></td>
+                        <td><xsl:value-of select="UN_V"/></td>
+                        <td><xsl:value-of select="concat($g,' - ',$sg)"/></td>
+                      </xsl:if>
+                    </tr>
+                  </xsl:for-each>
+                </xsl:for-each>
+              </xsl:for-each>
+              </table>
+            </div>
+          <!-- </div> -->
+          <br/>
+          <div class="row">
+            <div class="col-lg-12 col-md-10 col-xs-7">
+              <h1>TOP por subgénero</h1>
+            </div>
+          </div>
+            <div class="col-lg-12 col-md-10 col-xs-12">
+          <table>
+          <xsl:for-each select="GLOBAL/GENERO">
+            <tr>
+              <th> Posición </th>
+              <th> <xsl:value-of select="NOMBRE"/> </th>
+              <th> Unidades vendidas </th>
+            </tr>
+            <xsl:for-each select="SUBG">
+              <tr>
+                <td> <xsl:number value = "position()" format="1. "/></td>
+                  <td><xsl:value-of select="SG"/></td>
+                  <td>
+                    <!-- <xsl:for-each select="LIBRO"> -->
+                      <xsl:value-of select="sum(LIBRO/UN_V)"/>
+                    <!-- </xsl:for-each> -->
+                  </td> 
               </tr>
             </xsl:for-each>
-          </xsl:for-each>
-        </xsl:for-each>
-        </table>
-        <br/>
-        <h1>TOP por subgénero</h1>
-        <table>
-        <xsl:for-each select="GLOBAL/GENERO">
-          <tr>
-            <th> Posición </th>
-            <th> <xsl:value-of select="NOMBRE"/> </th>
-            <th> Unidades vendidas </th>
-          </tr>
-          <xsl:for-each select="SUBG">
-            <tr>
-               <td> <xsl:number value = "position()" format="1. "/></td>
-                <td><xsl:value-of select="SG"/></td>
-                <td>
-                  <!-- <xsl:for-each select="LIBRO"> -->
-                    <xsl:value-of select="sum(LIBRO/UN_V)"/>
-                  <!-- </xsl:for-each> -->
-                </td> 
-            </tr>
-          </xsl:for-each>
 
-        </xsl:for-each>
-        </table>
+          </xsl:for-each>
+          </table>
+          </div>
+      
+        </div>
         
         <script src="js/index.js"></script>
         <!-- Bootstrap core JavaScript -->
