@@ -92,17 +92,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                <td> <xsl:number value = "position()" format="1. "/></td>
                 <td><xsl:value-of select="SG"/></td>
                 <td>
-                  <xsl:for-each select="LIBRO">
-                  <!-- FALTA SUMAR LAS UNIDADES VENDIDAS -->
-                    <!-- <xsl:number value="UN_V"/> -->
-                    <!-- <xsl:variable name="t" select="UN_V"/> -->
-                    <xsl:variable name="aux" select="number(UN_V)"/>
-                    <!-- <xsl:variable name="suma" select="sum($aux)"/> -->
-                    <xsl:value-of select="$aux"/>
-                  </xsl:for-each>
+                  <!-- <xsl:for-each select="LIBRO"> -->
+                    <xsl:value-of select="sum(LIBRO/UN_V)"/>
+                  <!-- </xsl:for-each> -->
                 </td> 
             </tr>
           </xsl:for-each>
+
         </xsl:for-each>
         </table>
         
