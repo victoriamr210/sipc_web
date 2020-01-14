@@ -42,8 +42,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                   <input type="text" placeholder="Buscar..." name="titulo"/>
                   <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="checkif()" href="#">Mi Perfil</a>
+                </li>
                <li class="nav-item">
-                <a class="nav-link" href="login.html">Log In</a>
+                <a class="nav-link" onclick="checkif()" href="#">Log In</a>
               </li>
               </ul>
             </div>
@@ -120,10 +123,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       
         </div>
         
-        <script src="js/index.js"></script>
+        <!-- <script src="js/index.js"></script> -->
         <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+        <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
         <footer class="py-5 bg-dark">
           <div class="container">
@@ -131,6 +134,33 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
           </div>
           <!-- /.container -->
         </footer>
+        <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-auth.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-analytics.js"></script -->
+  <!-- <script defer src="/__/firebase/7.1.0/firebase-analytics.js"></script> -->
+  <script src="/__/firebase/7.6.2/firebase-analytics.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDt-4nQ34xJ6DDy9KVXaoSj7S164dfHQmQ",
+      authDomain: "sipc-web-ab169.firebaseapp.com",
+      databaseURL: "https://sipc-web-ab169.firebaseio.com",
+      projectId: "sipc-web-ab169",
+      storageBucket: "sipc-web-ab169.appspot.com",
+      messagingSenderId: "561462445785",
+      appId: "1:561462445785:web:df7fb8fe481519395ea0c8",
+      measurementId: "G-DE51LX7E49"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/index.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        
       </body> 
     </HTML> 
   </xsl:template> 

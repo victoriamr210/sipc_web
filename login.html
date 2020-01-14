@@ -113,6 +113,11 @@
     <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-auth.js"></script>
+    <script src="/__/firebase/7.6.2/firebase-app.js"></script>
+    <script src="/__/firebase/7.6.2/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.6.2/firebase-auth.js"></script>
+    <script src="/__/firebase/7.6.2/firebase-firestore.js"></script>
+
     <script>
       // Your web app's Firebase configuration
       var firebaseConfig = {
@@ -122,10 +127,12 @@
         projectId: "sipc-web-ab169",
         storageBucket: "sipc-web-ab169.appspot.com",
         messagingSenderId: "561462445785",
-        appId: "1:561462445785:web:df7fb8fe481519395ea0c8"
+        appId: "1:561462445785:web:df7fb8fe481519395ea0c8",
+        measurementId: "G-DE51LX7E49"
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
     </script>
 
     <!-- Previously loaded Firebase SDKs -->

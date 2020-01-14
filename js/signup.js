@@ -27,21 +27,25 @@ signupForm.addEventListener('submit', (e) => {
           // Save the email locally so you don't need to ask the user for it again
           // if they open the link on the same device.
           // window.localStorage.setItem('emailForSignIn', email);
-          firebase.auth().signInWithEmailAndPassword(email, password).then(
-            db.collection("user").doc(firebase.auth().currentUser.uid).set({
+          var u = firebase.auth().currentUser.uid;
+          alert(u);
+          firebase.auth().signInWithEmailAndPassword(email, password).then( 
+            db.collection("user").doc(u).set({
               name: username,
               uemail: email
             })
             .then(function () {
-              console.log("Document successfully written!");
+              alert("Document successfully written!");
             })
             .catch(function (error) {
-              console.error("Error writing document: ", error);
+              // console.error("Error writing document: ", error);
+              alert(error);
             })
-            
+          
             
             )
             // signup.setAttribute("href", "index.html");
+          
             window.location.href = "index.html";
 
               
@@ -70,6 +74,8 @@ signupForm.addEventListener('submit', (e) => {
       // firebase.auth().createUserWithEmailAndPassword(email, password).then(cred => {
       //   console.log(cred);
       // })
+    }else{
+      alert("Contraseñas distintas");
     }
   }else{
     alert("email inválido");

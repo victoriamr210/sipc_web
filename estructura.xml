@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="plantilla.xsl" ?>
 
 <!-- Pagina web de libreria -->
-<!-- Genero = {Disponibilidad, Titulo, Autor, Precio, Fecha edicion, IBN  }=Libro -->
+<!-- Genero = {Disponibilidad, Titulo, Autor, Precio, Fecha EDITORIAL, IBN  }=Libro -->
 <GLOBAL GLO="g">
   <GENERO>
     <NOMBRE>FICCION</NOMBRE>
@@ -13,7 +13,7 @@
         <TITULO>The Best Misteries of Isaac Asimov</TITULO>
         <AUTOR>Isaac Asimov</AUTOR>
         <PRECIO>19.99€</PRECIO>
-        <EDICION>Santillana</EDICION>
+        <EDITORIAL>Santillana</EDITORIAL>
         <IBN>87456932</IBN>
         <UN_V>112254</UN_V>
       </LIBRO>
@@ -23,7 +23,7 @@
         <TITULO>Sherlock Holmes</TITULO>
         <AUTOR>Isaac Asimov</AUTOR>
         <PRECIO>19.99€</PRECIO>
-        <EDICION>Santillana</EDICION>
+        <EDITORIAL>Santillana</EDITORIAL>
         <IBN>87456932</IBN>
         <UN_V>3000</UN_V>
       </LIBRO>
@@ -36,7 +36,7 @@
         <TITULO>Sherlock Holmes </TITULO>
         <AUTOR>Arthur Conan Doyle</AUTOR>
         <PRECIO>23.00€</PRECIO>
-        <EDICION>SM</EDICION>
+        <EDITORIAL>SM</EDITORIAL>
         <IBN>13246595</IBN>
         <UN_V>1122</UN_V>
       </LIBRO>
@@ -49,7 +49,7 @@
         <TITULO>Cumbres Borrascosas</TITULO>
         <AUTOR>Emily Brontë</AUTOR>
         <PRECIO>15.00€</PRECIO>
-        <EDICION>Penguin</EDICION>
+        <EDITORIAL>Penguin</EDITORIAL>
         <IBN>18642647</IBN>
         <UN_V>112254</UN_V>
       </LIBRO>
@@ -62,7 +62,7 @@
         <TITULO>The Witcher: The Last Wish</TITULO>
         <AUTOR>Andrew Sapkoswki</AUTOR>
         <PRECIO>25.00€</PRECIO>
-        <EDICION>Santilla</EDICION>
+        <EDITORIAL>Santilla</EDITORIAL>
         <IBN>789</IBN>
         <UN_V>1154</UN_V>
       </LIBRO>
@@ -79,7 +79,7 @@
         <TITULO>Romacero</TITULO>
         <AUTOR>Federico García Lorca</AUTOR>
         <PRECIO>10.00€</PRECIO>
-        <EDICION>Santillana</EDICION>
+        <EDITORIAL>Santillana</EDITORIAL>
         <IBN>123</IBN>
         <UN_V>9283</UN_V>
       </LIBRO>
@@ -92,7 +92,7 @@
         <TITULO>Don Quijote de la Mancha</TITULO>
         <AUTOR>Miguel de Cervantes</AUTOR>
         <PRECIO>10.00€</PRECIO>
-        <EDICION>SM</EDICION>
+        <EDITORIAL>SM</EDITORIAL>
         <IBN>7894</IBN>
         <UN_V>123444</UN_V>
       </LIBRO>
@@ -105,7 +105,7 @@
         <TITULO>La vida es sueño</TITULO>
         <AUTOR>Calderón de la Barca</AUTOR>
         <PRECIO>15.00€</PRECIO>
-        <EDICION>Santilla</EDICION>
+        <EDITORIAL>Santilla</EDITORIAL>
         <IBN>7899</IBN>
         <UN_V>1232899</UN_V>
       </LIBRO>
@@ -122,7 +122,7 @@
         <TITULO>Ciencia para Dummies</TITULO>
         <AUTOR>Varios</AUTOR>
         <PRECIO>20.00€</PRECIO>
-        <EDICION>Para Dummies</EDICION>
+        <EDITORIAL>Para Dummies</EDITORIAL>
         <IBN>4567</IBN>      
         <UN_V>32899</UN_V>
       </LIBRO>
@@ -135,7 +135,7 @@
         <TITULO>La cocina de la salud</TITULO>
         <AUTOR>Varios</AUTOR>
         <PRECIO>9.99€</PRECIO>
-        <EDICION>Planeta</EDICION>
+        <EDITORIAL>Planeta</EDITORIAL>
         <IBN>7899</IBN>
         <UN_V>1899</UN_V>
       </LIBRO>
@@ -148,7 +148,7 @@
         <TITULO>Redes de Computadores</TITULO>
         <AUTOR>Kurose y Ross</AUTOR>
         <PRECIO>57.00€</PRECIO>
-        <EDICION>Pearson</EDICION>
+        <EDITORIAL>Pearson</EDITORIAL>
         <IBN>78945</IBN>
         <UN_V>12539</UN_V>
       </LIBRO>
