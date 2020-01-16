@@ -81,22 +81,6 @@ function signUp(){
 
 
 
-
-function hola(id){
-  // const db = firebase.firestore();
-  var ref = db.collection("libros").doc(''+id);
-  var name;
-  ref.get().then(function(doc){
-    console.log(doc.data());
-  });
-
-  // window.open("../book.html")
-  
-  // var name = db.ref('/libros/'+ id + 'nombre');
-  // console.log(name);
-
-}
-
 function build(id){
   const card = document.querySelector('#desp'+id);
   const par = document.querySelector('#au'+id);
@@ -162,6 +146,7 @@ function getinfouser(){
 
 }
 
+
 function checkif(){
   // var user = firebase.auth().currentUser;
   var log = document.getElementById("loginpage");
@@ -179,6 +164,21 @@ function checkif(){
   
 
   
+}
+
+function showlog(){
+  var x = document.getElementById("loginpage");
+  firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+      x.style.display = "none";
+
+      // User is signed in.
+    } else {
+      x.style.display = "block";
+
+      // No user is signed in.
+    }
+  })
 }
 
 function logout(){
@@ -204,8 +204,9 @@ function changeuname(){
   // console.log(uname);
   firebase.auth().onAuthStateChanged(function (user) {
     console.log(user.uid);
-    db.collection("user").doc(user.uid).update({
+    db.collection("user").doc(user.uid).set({
     name: uname
+
     })
   });
   form.style.display = "none";

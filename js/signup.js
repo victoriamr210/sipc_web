@@ -28,7 +28,7 @@ signupForm.addEventListener('submit', (e) => {
           // if they open the link on the same device.
           // window.localStorage.setItem('emailForSignIn', email);
           var u = firebase.auth().currentUser.uid;
-          alert(u);
+          // alert(u);
           firebase.auth().signInWithEmailAndPassword(email, password).then( 
             db.collection("user").doc(u).set({
               name: username,

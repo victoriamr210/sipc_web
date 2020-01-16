@@ -12,7 +12,6 @@ loginForm.addEventListener('submit', (e) => {
     .then(function () {
       // alert("ok");
       // login.setAttribute("href", "index.html");
-      
       window.location.href = "index.html";
 
 
